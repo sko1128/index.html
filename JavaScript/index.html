@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <style>
+            st{
+                font-size:15px;
+            }
+
+            div{
+                font-size:20px;
+                font-weight: bold;
+
+                height: 50px;
+            }
+
+            namearea{
+                width: 1000px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>おみくじ</h1>
+        <strong>
+            おみくじは
+            <a href="https://unityroom.com/games/omikuji-sko-unity" target="_blank">こちら</a>
+            から
+        </strong>
+
+        <form action="./form.html" method="POST">
+
+            <st>
+                名前:
+            </st>
+
+            <div>
+                <namearea>
+                    <input type="text" name="name">
+                </namearea>
+            </div>
+
+            <st>
+                評価:
+            </st>
+
+            <div>
+                <select name="star">
+                    <option value="★★★★★">★★★★★</option>
+                    <option value="★★★★☆">★★★★☆</option>
+                    <option value="★★★☆☆">★★★☆☆</option>
+                    <option value="★★☆☆☆">★★☆☆☆</option>
+                    <option value="★☆☆☆☆">★☆☆☆☆</option>
+                </select>
+            </div>
+
+            <st>
+                自由にお書きください:
+            </st>
+
+            <div>
+                <input type="textarea" free="free">
+            </div>
+
+            <button type="submit">送信する</button>
+        </form>
+    </body>
+</html>
